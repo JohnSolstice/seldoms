@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+@import url("framework.css");
+@import url("colors.css");
+@import url("media_queries.css");
+@import url("mobile_navigation.css");
+
+
+/*
+Vimeo ----------------------------------------------------
+*/
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* 
+Header --------------------------------------------------------
+*/
+#header {
+    margin-bottom: 70px;
+}
+
+#header #logo {
+    margin: 30px 0 0 0;
+}
+
+#header #logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+/* 
+Page Intro --------------------------------------------------------
+*/
+#pageintro {
+    padding: 200px 0;
+}
+
+#pageintro article {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pageintro article * {
+    word-wrap: break-word;
+}
+
+#pageintro .heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+#pageintro p:first-of-type {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto 30px;
+}
+
+#pageintro footer {
+    margin-top: 80px;
+}
+
+
+/* 
+Content Area -----------------------------------------------------
+*/
+.container {
+    padding: 100px 0;
+}
+
+/* Content */
+.container .content {}
+
+.sectiontitle {
+    display: block;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.sectiontitle * {
+    margin: 0;
+}
+
+/* Sidebar */
+.container .sidebar {}
+
+.sidebar .sdb_holder {
+    margin-bottom: 50px;
+}
+
+.sidebar .sdb_holder:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 
+Footer -------------------------------------------------------
+*/
+#footer {
+    padding: 80px 0;
+}
+
+#footer li {
+	display:inline;
+	padding: 10px
+}
+
+#footer ul {
+	padding: 0px;
+}
+
+#footer article {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 
+Navigation -------------------------------------------------
+*/
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainav,
+.sidebar nav {
+    line-height: normal;
+}
+
+/* Top Navigation */
+#mainav {}
+
+#mainav ul {
+    text-transform: uppercase;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+#mainav li:last-child {
+    margin-right: 0;
+}
+
+#mainav li a {
+    display: block;
+    padding: 30px 0;
+}
+
+/* Sidebar Navigation */
+.sidebar nav {
+    display: block;
+    width: 100%;
+}
+
+.sidebar nav li {
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+
+.sidebar nav a {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 5px 10px 5px 15px;
+    text-decoration: none;
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+
+.sidebar nav a::after {
+    top: 9px;
+    left: 5px;
+    content: "\f101";
+}
+
+.sidebar nav ul ul a {
+    padding-left: 35px;
+}
+
+.sidebar nav ul ul a::after {
+    left: 25px;
+}
+
+.sidebar nav ul ul ul a {
+    padding-left: 55px;
+}
+
+.sidebar nav ul ul ul a::after {
+    left: 45px;
+}
+
+
+/* 
+Gallery ------------------------------------------------------
+*/
+#gallery {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#gallery figure figcaption {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+#gallery li {
+    margin-bottom: 30px;
+}
