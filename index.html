@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<head>
+	<script src="jquery-3.4.1.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#navigationLoaded").load("sections/navigation.html"); 
+      $("#footerLoaded").load("sections/footer.html"); 
+    });
+    </script>
+</head>
+
+
+<body id="top">
+    <div class="bgded overlay" style="background-image:url('images/index.jpeg');">
+        <div id="navigationLoaded"></div>
+        <div id="pageintro" class="hoc clear">
+            <article>
+                <h3 class="heading">We are the Seldoms</h3>
+                <p>A Chicago-based dance company that values making intelligent, visually rich dance theater driven by inquiry</p>
+                <p class="font-x1 uppercase bold">Bold Exacting potent</p>
+                <footer>
+                    <ul class="nospace inline pushright">
+                        <li><a class="btn" href="#">Upcoming Events</a></li>
+                        <li><a class="btn inverse" href="#">Donate Now</a></li>
+                    </ul>
+                </footer>
+            </article>
+        </div>
+    </div>
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <div class="sectiontitle">
+                <h6 class="heading">What's new</h6>
+            </div>
+            <div class="group">
+                <div class="two_third first">
+                    <p><strong>Carrie Hanson named Artist-In-Residence at UW-Madison</strong></p>
+                    <p>Three artists were selected by the Univeristy of Wisconsin Madison Division of the Arts to teach for the Interdisciplinary Arts Residency Program.</p>
+                    <footer><a class="btn" href="https://www.education.wisc.edu/soe/news-events/news/2018/12/26/division-of-the-arts-selects-three-artists-for-2019-20-residency">Read More &raquo;</a></footer>
+                </div>
+                <div class="one_third">
+                    <img src="images/carrie-hanson.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="sectiontitle">
+            </div>
+            <div class="two_third first">
+                <p><strong>FLOE - In Progress</strong></p>
+                <p>Watch excerpts from our recent in-progress performance</p>
+                <figure class="videocontainer">
+                    <div class="video-responsive">
+                        <iframe src="https://player.vimeo.com/video/317486527" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </figure>
+            </div>
+            <div class="clear"></div>
+        </main>
+    </div>
+
+    <div id="footerLoaded"></div>
+</body>
+
+</html>

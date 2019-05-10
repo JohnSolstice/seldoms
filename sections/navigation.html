@@ -1,0 +1,39 @@
+<script>
+function myFunction() {
+  var x = document.getElementById("mobileLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<script src="../jquery-3.4.1.min.js"></script> 
+<script> 
+    $(function(){
+      $("#mobileNavigationLoaded").load("sections/mobile_navigation.html"); 
+    });
+</script>
+
+<div class="wrapper row1">
+    <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">
+            <h1><a href="index.html">The Seldoms</a></h1>
+        </div>
+
+        <div id="mobileNavigationLoaded"></div>
+
+        <nav id="mainav" class="fl_right">
+
+            <ul class="clear">
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="index.html">Artists</a></li>
+                <li><a href="index.html">Events</a></li>
+                <li><a href="index.html">Repertory</a></li>
+                <li><a href="index.html">Reviews</a></li>
+                <li><a href="index.html">Supporters</a></li>
+                <li><a href="index.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>

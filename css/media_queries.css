@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media screen and (min-width:900px) {
+    .hoc {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .hoc {
+        max-width: 90%;
+    }
+
+    #header {
+        padding: 30px 0;
+    }
+
+    #header #logo {
+        margin-top: 3px;
+    }
+
+    #mainav ul {
+        display: none;
+    }
+
+    #footer li {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:750px) {
+
+    .imgl,
+    .imgr {
+        display: inline-block;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    .group .group>*:last-child,
+    .clear .clear>*:last-child,
+    .clear .group>*:last-child,
+    .group .clear>*:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Experimental - Needs more testing in different situations, stops double margin when stacking */
+    .one_half,
+    .one_third,
+    .two_third,
+    .one_quarter,
+    .two_quarter,
+    .three_quarter {
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    #header #logo {
+        margin: 0 0 15px 0;
+    }
+
+    .sectiontitle {
+        text-align: left;
+    }
+
+    .logos+figcaption {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .scrollable {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px 0;
+        padding: 0 0 15px 0;
+        overflow: auto;
+        overflow-x: scroll;
+    }
+
+    .scrollable table {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .inline li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .pushright li {
+        margin-right: 0;
+    }
+
+    .font-x2 {
+        font-size: 1.4rem;
+    }
+
+    .font-x3 {
+        font-size: 1.6rem;
+    }
+
+    #pageintro article,
+    #pageintro p:first-of-type {
+        max-width: none;
+        width: 100%;
+    }
+
+    #pageintro .heading {
+        font-size: 1.6rem;
+    }
+}
